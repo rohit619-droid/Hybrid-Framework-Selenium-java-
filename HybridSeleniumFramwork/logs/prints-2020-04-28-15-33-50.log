@@ -1,0 +1,10 @@
+2020-04-28-15-33-38 [main] INFO  com.hybrid.test.PracticePageTest - Driver initialized...
+2020-04-28-15-33-47 [main] INFO  com.hybrid.test.PracticePageTest - Hit url...
+2020-04-28-15-33-48 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - radioButton test initiated
+2020-04-28-15-33-48 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - radioButton test completed
+2020-04-28-15-33-48 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - suggestion test initiated
+2020-04-28-15-33-49 [main] DEBUG com.hybrid.objectRepository.PracticePageFactory - Text captured :: in
+2020-04-28-15-33-50 [main] DEBUG com.hybrid.objectRepository.PracticePageFactory - Text captured :: Argentina
+2020-04-28-15-33-50 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Element found
+2020-04-28-15-33-50 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - suggestion test completed
+2020-04-28-15-33-50 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - selectDropdown test initiated

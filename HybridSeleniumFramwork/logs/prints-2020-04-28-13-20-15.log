@@ -1,0 +1,5 @@
+13:20:11.987 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - alertBox test initiated
+13:20:13.315 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - alertBox accept clicked
+13:20:14.682 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - alertBox confirm clicked
+13:20:15.931 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - alertBox cancel clicked
+13:20:15.931 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - alertBox test completed

@@ -1,0 +1,5 @@
+13:20:16.518 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - display test initiated
+13:20:16.829 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Before clicking hide field present or not :: true
+13:20:16.937 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - After clicking hide field present or not :: false
+13:20:17.067 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - After clicking show field present or not :: true
+13:20:17.068 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - display test completed

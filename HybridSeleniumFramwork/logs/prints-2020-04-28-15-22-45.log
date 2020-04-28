@@ -1,0 +1,8 @@
+2020-04-28-15-22-45 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Courses :: Advanced Selenium Framework Pageobject, TestNG, Maven, Jenkins,C :: Price :: 20
+2020-04-28-15-22-45 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Courses :: Write effective QA Resume that will turn to interview call :: Price :: 0
+2020-04-28-15-22-45 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Webtable test completed
+2020-04-28-15-22-45 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - display test initiated
+2020-04-28-15-22-45 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Before clicking hide field present or not :: true
+2020-04-28-15-22-45 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - After clicking hide field present or not :: false
+2020-04-28-15-22-45 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - After clicking show field present or not :: true
+2020-04-28-15-22-45 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - display test completed

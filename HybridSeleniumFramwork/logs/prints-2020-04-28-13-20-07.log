@@ -1,0 +1,5 @@
+13:20:01.600 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - checkbox test initiated
+13:20:01.852 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - checkbox test completed
+13:20:01.852 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - WindowHandles test initiated
+13:20:07.936 [main] DEBUG com.hybrid.objectRepository.PracticePageFactory - Child window :: QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy
+13:20:07.996 [main] DEBUG com.hybrid.objectRepository.PracticePageFactory - Parent window :: Practice Page

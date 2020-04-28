@@ -1,0 +1,5 @@
+13:20:07.996 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - WindowHandles test completed
+13:20:08.101 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Windowtab test initiated
+13:20:11.916 [main] DEBUG com.hybrid.objectRepository.PracticePageFactory - Child window :: QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy
+13:20:11.987 [main] DEBUG com.hybrid.objectRepository.PracticePageFactory - Parent window :: Practice Page
+13:20:11.987 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Windowtab test completed

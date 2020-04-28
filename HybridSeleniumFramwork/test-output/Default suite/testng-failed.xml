@@ -5,9 +5,9 @@
     <classes>
       <class name="com.hybrid.test.PracticePageTest">
         <methods>
-          <include name="formValidations"/>
           <include name="initialze"/>
           <include name="tearDown"/>
+          <include name="webTable"/>
         </methods>
       </class> <!-- com.hybrid.test.PracticePageTest -->
     </classes>

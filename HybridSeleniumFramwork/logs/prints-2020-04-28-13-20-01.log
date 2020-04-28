@@ -1,0 +1,5 @@
+13:20:01.479 [main] DEBUG com.hybrid.objectRepository.PracticePageFactory - Text captured :: Argentina
+13:20:01.486 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Element found
+13:20:01.486 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - suggestion test completed
+13:20:01.486 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - selectDropdown test initiated
+13:20:01.599 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - selectDropdown test completed

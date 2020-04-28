@@ -1,0 +1,10 @@
+2020-04-28-15-19-39 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - suggestion test initiated
+2020-04-28-15-19-39 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - selectDropdown test initiated
+2020-04-28-15-19-39 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - checkbox test initiated
+2020-04-28-15-19-39 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - WindowHandles test initiated
+2020-04-28-15-19-39 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Windowtab test initiated
+2020-04-28-15-19-39 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - alertBox test initiated
+2020-04-28-15-19-39 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Webtable test initated
+2020-04-28-15-19-39 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - display test initiated
+2020-04-28-15-19-39 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - hover test initiated
+2020-04-28-15-19-39 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - iframe test initiated

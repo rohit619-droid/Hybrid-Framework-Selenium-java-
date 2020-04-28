@@ -1,0 +1,5 @@
+2020-04-28-13-26-07 [main] DEBUG com.hybrid.objectRepository.PracticePageFactory - Text captured :: in
+2020-04-28-13-26-08 [main] DEBUG com.hybrid.objectRepository.PracticePageFactory - Text captured :: Argentina
+2020-04-28-13-26-08 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Element found
+2020-04-28-13-26-08 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - suggestion test completed
+2020-04-28-13-26-08 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - selectDropdown test initiated

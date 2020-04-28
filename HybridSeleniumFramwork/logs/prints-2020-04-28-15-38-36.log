@@ -1,0 +1,9 @@
+2020-04-28-15-38-29 [main] DEBUG com.hybrid.objectRepository.PracticePageFactory - Text captured :: Argentina
+2020-04-28-15-38-29 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Element found
+2020-04-28-15-38-29 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - suggestion test completed
+2020-04-28-15-38-29 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - selectDropdown test initiated
+2020-04-28-15-38-30 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - selectDropdown test completed
+2020-04-28-15-38-30 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - checkbox test initiated
+2020-04-28-15-38-30 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - checkbox test completed
+2020-04-28-15-38-30 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - WindowHandles test initiated
+2020-04-28-15-38-36 [main] DEBUG com.hybrid.objectRepository.PracticePageFactory - Child window :: QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy

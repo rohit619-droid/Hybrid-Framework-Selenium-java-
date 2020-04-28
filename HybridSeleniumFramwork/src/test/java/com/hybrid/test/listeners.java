@@ -10,7 +10,7 @@ import com.hybrid.utils.utils;
 
 
 public class listeners implements ITestListener {
-	utils b = new utils();
+	utils utils = new utils();
 
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
@@ -25,7 +25,7 @@ public class listeners implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 
 		try {
-			b.getScreenshot(result.getName());
+			utils.getScreenshot(result.getName());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

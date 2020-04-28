@@ -1,0 +1,10 @@
+2020-04-28-15-22-45 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - hover test initiated
+2020-04-28-15-22-47 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - hover test completed
+2020-04-28-15-22-47 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - iframe test initiated
+2020-04-28-15-22-47 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Course heading ::contact@rahulshettyacademy.com
+2020-04-28-15-22-47 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - iframe test completed
+2020-04-28-15-22-48 [main] INFO  com.hybrid.test.PracticePageTest - Should teardown the task....
+2020-04-28-15-27-32 [main] INFO  com.hybrid.test.PracticePageTest - Driver initialized...
+2020-04-28-15-27-39 [main] INFO  com.hybrid.test.PracticePageTest - Hit url...
+2020-04-28-15-27-40 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - radioButton test initiated
+2020-04-28-15-27-40 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - radioButton test completed

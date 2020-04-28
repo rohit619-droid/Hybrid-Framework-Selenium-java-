@@ -1,0 +1,5 @@
+2020-04-28-15-56-48 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - hover test completed
+2020-04-28-15-56-48 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - iframe test initiated
+2020-04-28-15-56-48 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Course heading ::contact@rahulshettyacademy.com
+2020-04-28-15-56-48 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - iframe test completed
+2020-04-28-15-56-49 [main] INFO  com.hybrid.test.PracticePageTest - Should teardown the task....

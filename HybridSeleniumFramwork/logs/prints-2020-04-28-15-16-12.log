@@ -1,0 +1,9 @@
+2020-04-28-15-16-09 [main] DEBUG com.hybrid.objectRepository.PracticePageFactory - Parent window :: Practice Page
+2020-04-28-15-16-09 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Windowtab test completed
+2020-04-28-15-16-09 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - WindowHandles test initiated
+2020-04-28-15-16-10 [main] DEBUG com.hybrid.objectRepository.PracticePageFactory - Child window :: Rahul Shetty Academy
+2020-04-28-15-16-10 [main] DEBUG com.hybrid.objectRepository.PracticePageFactory - Parent window :: Practice Page
+2020-04-28-15-16-10 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - WindowHandles test completed
+2020-04-28-15-16-10 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - hover test initiated
+2020-04-28-15-16-12 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - hover test completed
+2020-04-28-15-16-12 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - iframe test initiated

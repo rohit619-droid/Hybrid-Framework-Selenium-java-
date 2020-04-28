@@ -1,0 +1,4 @@
+13:20:16.417 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Courses :: Master Selenium Automation in simple Python Language :: Price :: 25
+13:20:16.467 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Courses :: Advanced Selenium Framework Pageobject, TestNG, Maven, Jenkins,C :: Price :: 20
+13:20:16.518 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Courses :: Write effective QA Resume that will turn to interview call :: Price :: 0
+13:20:16.518 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Webtable test completed

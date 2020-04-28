@@ -1,0 +1,10 @@
+2020-04-28-15-42-41 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - radioButton test completed
+2020-04-28-15-42-41 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - suggestion test initiated
+2020-04-28-15-42-41 [main] DEBUG com.hybrid.objectRepository.PracticePageFactory - Text captured :: in
+2020-04-28-15-42-42 [main] DEBUG com.hybrid.objectRepository.PracticePageFactory - Text captured :: Argentina
+2020-04-28-15-42-42 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Element found
+2020-04-28-15-42-42 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - suggestion test completed
+2020-04-28-15-42-42 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - selectDropdown test initiated
+2020-04-28-15-42-42 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - selectDropdown test completed
+2020-04-28-15-42-43 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - checkbox test initiated
+2020-04-28-15-42-43 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - checkbox test completed

@@ -1,0 +1,10 @@
+2020-04-28-15-06-53 [main] INFO  com.hybrid.test.PracticePageTest - Should teardown the task....
+2020-04-28-15-15-54 [main] INFO  com.hybrid.test.PracticePageTest - Driver initialized...
+2020-04-28-15-16-02 [main] INFO  com.hybrid.test.PracticePageTest - Hit url...
+2020-04-28-15-16-03 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - alertBox test initiated
+2020-04-28-15-16-04 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - alertBox accept clicked
+2020-04-28-15-16-05 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - alertBox confirm clicked
+2020-04-28-15-16-06 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - alertBox cancel clicked
+2020-04-28-15-16-06 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - alertBox test completed
+2020-04-28-15-16-06 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - checkbox test initiated
+2020-04-28-15-16-07 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - checkbox test completed

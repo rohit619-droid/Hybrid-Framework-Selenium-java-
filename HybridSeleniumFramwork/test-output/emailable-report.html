@@ -9,10 +9,53 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">28,953</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">10</td><td class="num">0</td><td class="num attn">1</td><td class="num">32,312</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.hybrid.test.PracticePageTest</td><td><a href="#m0">formValidations</a></td><td rowspan="1">1588056309153</td><td rowspan="1">17686</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.hybrid.test.PracticePageTest</td><td><a href="#m0">webTable</a></td><td rowspan="1">1588069605321</td><td rowspan="1">789</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">com.hybrid.test.PracticePageTest</td><td><a href="#m1">alertBox</a></td><td rowspan="1">1588069601402</td><td rowspan="1">3915</td></tr><tr class="passedeven"><td><a href="#m2">checkBoxAll</a></td><td rowspan="1">1588069592218</td><td rowspan="1">388</td></tr><tr class="passedeven"><td><a href="#m3">dropdown</a></td><td rowspan="1">1588069592034</td><td rowspan="1">179</td></tr><tr class="passedeven"><td><a href="#m4">elementDisplayed</a></td><td rowspan="1">1588069606116</td><td rowspan="1">538</td></tr><tr class="passedeven"><td><a href="#m5">getWindowTabs</a></td><td rowspan="1">1588069599020</td><td rowspan="1">2381</td></tr><tr class="passedeven"><td><a href="#m6">getWindowhandles</a></td><td rowspan="1">1588069592607</td><td rowspan="1">6411</td></tr><tr class="passedeven"><td><a href="#m7">hover</a></td><td rowspan="1">1588069606655</td><td rowspan="1">1577</td></tr><tr class="passedeven"><td><a href="#m8">iframe</a></td><td rowspan="1">1588069608234</td><td rowspan="1">505</td></tr><tr class="passedeven"><td><a href="#m9">radioButton</a></td><td rowspan="1">1588069590499</td><td rowspan="1">232</td></tr><tr class="passedeven"><td><a href="#m10">suggestion</a></td><td rowspan="1">1588069590737</td><td rowspan="1">1294</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.hybrid.test.PracticePageTest#formValidations</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.hybrid.test.PracticePageTest#webTable</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [book] but found [[[[ChromeDriver: chrome on WINDOWS (464dc09bd8c8d72b5b1f2a84dffd7a99)] -&gt; xpath: //td[2]], [[ChromeDriver: chrome on WINDOWS (464dc09bd8c8d72b5b1f2a84dffd7a99)] -&gt; xpath: //td[2]], [[ChromeDriver: chrome on WINDOWS (464dc09bd8c8d72b5b1f2a84dffd7a99)] -&gt; xpath: //td[2]], [[ChromeDriver: chrome on WINDOWS (464dc09bd8c8d72b5b1f2a84dffd7a99)] -&gt; xpath: //td[2]], [[ChromeDriver: chrome on WINDOWS (464dc09bd8c8d72b5b1f2a84dffd7a99)] -&gt; xpath: //td[2]], [[ChromeDriver: chrome on WINDOWS (464dc09bd8c8d72b5b1f2a84dffd7a99)] -&gt; xpath: //td[2]], [[ChromeDriver: chrome on WINDOWS (464dc09bd8c8d72b5b1f2a84dffd7a99)] -&gt; xpath: //td[2]], [[ChromeDriver: chrome on WINDOWS (464dc09bd8c8d72b5b1f2a84dffd7a99)] -&gt; xpath: //td[2]], [[ChromeDriver: chrome on WINDOWS (464dc09bd8c8d72b5b1f2a84dffd7a99)] -&gt; xpath: //td[2]], [[ChromeDriver: chrome on WINDOWS (464dc09bd8c8d72b5b1f2a84dffd7a99)] -&gt; xpath: //td[2]], [[ChromeDriver: chrome on WINDOWS (464dc09bd8c8d72b5b1f2a84dffd7a99)] -&gt; xpath: //td[2]]]]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at com.hybrid.objectRepository.PracticePageFactory.webTable(PracticePageFactory.java:342)
+	at com.hybrid.test.PracticePageTest.webTable(PracticePageTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.hybrid.test.PracticePageTest#alertBox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.hybrid.test.PracticePageTest#checkBoxAll</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.hybrid.test.PracticePageTest#dropdown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.hybrid.test.PracticePageTest#elementDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.hybrid.test.PracticePageTest#getWindowTabs</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.hybrid.test.PracticePageTest#getWindowhandles</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.hybrid.test.PracticePageTest#hover</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.hybrid.test.PracticePageTest#iframe</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.hybrid.test.PracticePageTest#radioButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.hybrid.test.PracticePageTest#suggestion</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

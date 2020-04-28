@@ -1,0 +1,9 @@
+2020-04-28-15-44-56 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - After clicking hide field present or not :: false
+2020-04-28-15-44-56 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - After clicking show field present or not :: true
+2020-04-28-15-44-56 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - display test completed
+2020-04-28-15-44-56 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - hover test initiated
+2020-04-28-15-44-58 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - hover test completed
+2020-04-28-15-44-58 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - iframe test initiated
+2020-04-28-15-44-59 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Course heading ::contact@rahulshettyacademy.com
+2020-04-28-15-44-59 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - iframe test completed
+2020-04-28-15-45-00 [main] INFO  com.hybrid.test.PracticePageTest - Should teardown the task....

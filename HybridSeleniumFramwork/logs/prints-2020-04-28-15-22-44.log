@@ -1,0 +1,9 @@
+2020-04-28-15-22-40 [main] DEBUG com.hybrid.objectRepository.PracticePageFactory - Parent window :: Practice Page
+2020-04-28-15-22-40 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Windowtab test completed
+2020-04-28-15-22-40 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - alertBox test initiated
+2020-04-28-15-22-42 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - alertBox accept clicked
+2020-04-28-15-22-43 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - alertBox confirm clicked
+2020-04-28-15-22-44 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - alertBox cancel clicked
+2020-04-28-15-22-44 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - alertBox test completed
+2020-04-28-15-22-44 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Webtable test initated
+2020-04-28-15-22-44 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Courses :: Selenium Webdriver with Java Basics + Advanced + Interview Guide :: Price :: 30

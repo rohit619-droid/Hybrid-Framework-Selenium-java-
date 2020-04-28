@@ -1,0 +1,9 @@
+2020-04-28-15-38-36 [main] DEBUG com.hybrid.objectRepository.PracticePageFactory - Parent window :: Practice Page
+2020-04-28-15-38-36 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - WindowHandles test completed
+2020-04-28-15-38-36 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Windowtab test initiated
+2020-04-28-15-38-39 [main] DEBUG com.hybrid.objectRepository.PracticePageFactory - Child window :: QA Click Academy | Selenium,Jmeter,SoapUI,Appium,Database testing,QA Training Academy
+2020-04-28-15-38-39 [main] DEBUG com.hybrid.objectRepository.PracticePageFactory - Parent window :: Practice Page
+2020-04-28-15-38-39 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - Windowtab test completed
+2020-04-28-15-38-39 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - alertBox test initiated
+2020-04-28-15-38-41 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - alertBox accept clicked
+2020-04-28-15-38-42 [main] INFO  com.hybrid.objectRepository.PracticePageFactory - alertBox confirm clicked

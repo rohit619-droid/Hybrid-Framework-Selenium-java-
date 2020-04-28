@@ -1,14 +1,14 @@
 package com.hybrid.objectRepository;
 
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.IntStream;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
+import org.apache.logging.log4j.*;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -17,19 +17,23 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.google.common.util.concurrent.Uninterruptibles;
+import com.hybrid.utils.utils;
 
 public class PracticePageFactory {
 	public static Logger log = LogManager.getLogger(PracticePageFactory.class.getName());
 
 	public WebDriver driver;
 	public boolean display;
-
-	public PracticePageFactory(WebDriver driver) {
+	public ArrayList<String> data;
+	public PracticePageFactory(WebDriver driver) throws IOException {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		utils d = new utils();
+		data = d.getData("testdata", "Testcases", "FormDatas");
 	}
 
 	@FindBy(name = "radioButton")
@@ -225,7 +229,7 @@ public class PracticePageFactory {
 		log.info("radioButton test initiated");
 		List<WebElement> radioButtons = radioButtonCount();
 		List<WebElement> radioButtonText = radioButtonText();
-		IntStream.range(0, radioButtons.size()).filter(e -> radioButtonText.get(e).getText().equalsIgnoreCase("Radio2"))
+		IntStream.range(0, radioButtons.size()).filter(e -> radioButtonText.get(e).getText().equalsIgnoreCase(data.get(1)))
 				.forEach(e -> radioButtons.get(e).click());
 		log.info("radioButton test completed");
 
@@ -233,14 +237,14 @@ public class PracticePageFactory {
 
 	public void suggestion() {
 		log.info("suggestion test initiated");
-		suggestionDropdown().sendKeys("in");
+		suggestionDropdown().sendKeys(data.get(2));
 		suggestionDropdown().sendKeys(Keys.DOWN);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		String script = "return document.getElementById(\"autocomplete\").value;";
 		String text = (String) js.executeScript(script);
 		log.debug("Text captured :: " + text);
 		int i = 0;
-		while (!text.trim().equalsIgnoreCase("Argentina")) {
+		while (!text.trim().equalsIgnoreCase(data.get(3))) {
 			Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
 			i++;
 			suggestionDropdown().sendKeys(Keys.DOWN);
@@ -264,7 +268,7 @@ public class PracticePageFactory {
 		log.info("selectDropdown test initiated");
 		WebElement dropDown = sDropDown();
 		Select s = new Select(dropDown);
-		s.selectByVisibleText("Option2");
+		s.selectByVisibleText(data.get(4));
 		log.info("selectDropdown test completed");
 
 	}
@@ -309,17 +313,17 @@ public class PracticePageFactory {
 
 	public void alertBox() {
 		log.info("alertBox test initiated");
-		alertText().sendKeys("AlertTest");
+		alertText().sendKeys(data.get(5));
 		accept().click();
 		Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
 		driver.switchTo().alert().accept();
 		log.info("alertBox accept clicked");
-		alertText().sendKeys("ConfirmationTestAccept");
+		alertText().sendKeys(data.get(6));
 		acceptConfirm().click();
 		Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
 		driver.switchTo().alert().accept();
 		log.info("alertBox confirm clicked");
-		alertText().sendKeys("ConfirmationTestCancel");
+		alertText().sendKeys(data.get(7));
 		acceptConfirm().click();
 		Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
 		driver.switchTo().alert().dismiss();
@@ -332,15 +336,16 @@ public class PracticePageFactory {
 		log.info("Webtable test initated");
 		List<WebElement> courses = columnSecond();
 		List<WebElement> priceCount = columnThird();
-		IntStream.range(0, priceCount.size() - 1)
-		         .forEach(e -> log.info("Courses :: " + courses.get(e).getText() + " :: " + "Price :: " + priceCount.get(e).getText()));
+		IntStream.range(0, priceCount.size() - 1).forEach(e -> log
+				.info("Courses :: " + courses.get(e).getText() + " :: " + "Price :: " + priceCount.get(e).getText()));
+		Assert.assertEquals(courses, "book");
 		log.info("Webtable test completed");
 
 	}
 
 	public void elementDisplayed() {
 		log.info("display test initiated");
-		fieldDisplay().sendKeys("display/not");
+		fieldDisplay().sendKeys(data.get(8));
 		display = fieldDisplay().isDisplayed();
 		log.info("Before clicking hide field present or not :: " + display);
 		hideTextBox().click();
@@ -350,7 +355,6 @@ public class PracticePageFactory {
 		display = fieldDisplay().isDisplayed();
 		log.info("After clicking show field present or not :: " + display);
 		log.info("display test completed");
-
 	}
 
 	public void hover() {
@@ -358,7 +362,7 @@ public class PracticePageFactory {
 		Actions a = new Actions(driver);
 		a.moveToElement(hoverBox()).build().perform();
 		topClick().click();
-		a.moveToElement(driver.findElement(By.id("mousehover"))).build().perform();
+		a.moveToElement(hoverBox()).build().perform();
 		reloadClick().click();
 		log.info("hover test completed");
 	}
