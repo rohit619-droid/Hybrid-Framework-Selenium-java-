@@ -10,7 +10,6 @@ import com.hybrid.base.Base;
 import com.hybrid.objectRepository.PracticePageFactory;
 
 public class PracticePageTest extends Base {
-
 	public static Logger log = LogManager.getLogger(PracticePageTest.class.getName());
 
 	@BeforeTest
@@ -32,11 +31,10 @@ public class PracticePageTest extends Base {
 		obj.getWindowhandles();
 		obj.getWindowTabs();
 		obj.alertBox();
-		
-		
-		
-		
-		
+		obj.webTable();
+		obj.elementDisplayed();
+		obj.hover();
+		obj.iframe();
 
 	}
 

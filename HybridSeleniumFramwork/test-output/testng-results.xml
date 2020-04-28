@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23870" started-at="2020-04-28T03:24:37Z" finished-at="2020-04-28T03:25:01Z">
+  <suite name="Default suite" duration-ms="28953" started-at="2020-04-28T06:44:58Z" finished-at="2020-04-28T06:45:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23870" started-at="2020-04-28T03:24:37Z" finished-at="2020-04-28T03:25:01Z">
+    <test name="Default test" duration-ms="28953" started-at="2020-04-28T06:44:58Z" finished-at="2020-04-28T06:45:27Z">
       <class name="com.hybrid.test.PracticePageTest">
-        <test-method status="PASS" signature="initialze()[pri:0, instance:com.hybrid.test.PracticePageTest@9353778]" name="initialze" is-config="true" duration-ms="10098" started-at="2020-04-28T03:24:37Z" finished-at="2020-04-28T03:24:47Z">
+        <test-method status="PASS" signature="initialze()[pri:0, instance:com.hybrid.test.PracticePageTest@368f2016]" name="initialze" is-config="true" duration-ms="10368" started-at="2020-04-28T06:44:58Z" finished-at="2020-04-28T06:45:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialze -->
-        <test-method status="PASS" signature="formValidations()[pri:0, instance:com.hybrid.test.PracticePageTest@9353778]" name="formValidations" duration-ms="12852" started-at="2020-04-28T03:24:47Z" finished-at="2020-04-28T03:25:00Z">
+        <test-method status="PASS" signature="formValidations()[pri:0, instance:com.hybrid.test.PracticePageTest@368f2016]" name="formValidations" duration-ms="17686" started-at="2020-04-28T06:45:09Z" finished-at="2020-04-28T06:45:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- formValidations -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hybrid.test.PracticePageTest@9353778]" name="tearDown" is-config="true" duration-ms="820" started-at="2020-04-28T03:25:00Z" finished-at="2020-04-28T03:25:01Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hybrid.test.PracticePageTest@368f2016]" name="tearDown" is-config="true" duration-ms="862" started-at="2020-04-28T06:45:26Z" finished-at="2020-04-28T06:45:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
