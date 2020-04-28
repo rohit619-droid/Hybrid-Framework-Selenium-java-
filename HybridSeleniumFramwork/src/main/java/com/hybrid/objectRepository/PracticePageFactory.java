@@ -1,10 +1,13 @@
 package com.hybrid.objectRepository;
 
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.IntStream;
 
-import org.openqa.selenium.By;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -17,6 +20,8 @@ import org.testng.annotations.Test;
 import com.google.common.util.concurrent.Uninterruptibles;
 
 public class PracticePageFactory {
+	public static Logger log = LogManager.getLogger(PracticePageFactory.class.getName());
+
 	public WebDriver driver;
 
 	public PracticePageFactory(WebDriver driver) {
@@ -38,6 +43,21 @@ public class PracticePageFactory {
 
 	@FindBy(xpath = "//input[contains(@id,'checkBoxOption')]")
 	List<WebElement> checkBox;
+
+	@FindBy(id = "openwindow")
+	WebElement windowHandles;
+
+	@FindBy(id = "opentab")
+	WebElement windowTab;
+
+	@FindBy(id = "name")
+	WebElement textAlert;
+
+	@FindBy(id = "alertbtn")
+	WebElement acceptButton;
+
+	@FindBy(id = "confirmbtn")
+	WebElement confirmAccept;
 
 	@Test
 	public List<WebElement> radioButtonCount() {
@@ -69,57 +89,141 @@ public class PracticePageFactory {
 
 	}
 
-	public List<WebElement> radioButton() {
-		List<WebElement> radioButtons = radioButtonCount();
-		List<WebElement> radioButtonText = radioButtonText();
-		IntStream.range(0, radioButtons.size())
-		         .filter(e -> radioButtonText.get(e).getText().equalsIgnoreCase("Radio2"))
-				 .forEach(e -> radioButtons.get(e).click());
+	@Test
+	public WebElement windowHandles() {
+		return windowHandles;
 
-		return radioButtons;
 	}
 
-	public String suggestion() {
+	@Test
+	public WebElement windowTab() {
+		return windowTab;
+
+	}
+
+	@Test
+	public WebElement alertText() {
+		return textAlert;
+
+	}
+
+	@Test
+	public WebElement accept() {
+		return acceptButton;
+
+	}
+
+	@Test
+	public WebElement acceptConfirm() {
+		return confirmAccept;
+
+	}
+
+	public void radioButton() {
+		log.info("radioButton test initiated");
+		List<WebElement> radioButtons = radioButtonCount();
+		List<WebElement> radioButtonText = radioButtonText();
+		IntStream.range(0, radioButtons.size()).filter(e -> radioButtonText.get(e).getText().equalsIgnoreCase("Radio2"))
+				.forEach(e -> radioButtons.get(e).click());
+		log.info("radioButton test completed");
+
+	}
+
+	public void suggestion() {
+		log.info("suggestion test initiated");
 		suggestionDropdown().sendKeys("in");
 		suggestionDropdown().sendKeys(Keys.DOWN);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		String script = "return document.getElementById(\"autocomplete\").value;";
 		String text = (String) js.executeScript(script);
-		System.out.println(text);
+		log.debug("Text captured :: " + text);
 		int i = 0;
 		while (!text.trim().equalsIgnoreCase("Argentina")) {
 			Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
 			i++;
 			suggestionDropdown().sendKeys(Keys.DOWN);
 			text = (String) js.executeScript(script);
-			System.out.println(text);
+			log.debug("Text captured :: " + text);
 			if (i > 20) {
 				break;
 			}
 		}
 
 		if (i > 20) {
-			System.out.println("Elements not found");
+			log.info("Element not found");
 		} else {
-			System.out.println("Elements found");
+			log.info("Element found");
 		}
+		log.info("suggestion test completed");
 
-		return text;
 	}
 
-	public Select dropdown() {
+	public void dropdown() {
+		log.info("selectDropdown test initiated");
 		WebElement dropDown = sDropDown();
 		Select s = new Select(dropDown);
 		s.selectByVisibleText("Option2");
-		return s;
+		log.info("selectDropdown test completed");
+
 	}
 
-	public List<WebElement> checkBoxAll() {
+	public void checkBoxAll() {
+		log.info("checkbox test initiated");
 		List<WebElement> checkBox = checkBox();
-		IntStream.range(0, checkBox.size())
-		         .forEach(e -> checkBox.get(e).click());
+		IntStream.range(0, checkBox.size()).forEach(e -> checkBox.get(e).click());
+		log.info("checkbox test completed");
 
-		return checkBox;
+	}
+
+	public void getWindowhandles() {
+		log.info("WindowHandles test initiated");
+		windowHandles().click();
+		Set<String> ids = driver.getWindowHandles();
+		Iterator<String> it = ids.iterator();
+		String parentId = it.next();
+		String childId = it.next();
+		driver.switchTo().window(childId);
+		log.debug("Child window :: " + driver.getTitle());
+		driver.switchTo().window(parentId);
+		log.debug("Parent window :: " + driver.getTitle());
+		log.info("WindowHandles test completed");
+
+	}
+
+	public void getWindowTabs() {
+		log.info("Windowtab test initiated");
+		windowTab.click();
+		Set<String> ids = driver.getWindowHandles();
+		Iterator<String> it = ids.iterator();
+		String parentId = it.next();
+		String childId = it.next();
+		driver.switchTo().window(childId);
+		log.debug("Child window :: " + driver.getTitle());
+		driver.switchTo().window(parentId);
+		log.debug("Parent window :: " + driver.getTitle());
+		log.info("Windowtab test completed");
+
+	}
+
+	public void alertBox() {
+		log.info("alertBox test initiated");
+		alertText().sendKeys("AlertTest");
+		accept().click();
+		Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
+		driver.switchTo().alert().accept();
+		log.info("alertBox accept clicked");
+		alertText().sendKeys("ConfirmationTestAccept");
+		acceptConfirm().click();
+		Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
+		driver.switchTo().alert().accept();
+		log.info("alertBox confirm clicked");
+		alertText().sendKeys("ConfirmationTestCancel");
+		acceptConfirm().click();
+		Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
+		driver.switchTo().alert().dismiss();
+		log.info("alertBox cancel clicked");
+		log.info("alertBox test completed");
+
 	}
 
 }
